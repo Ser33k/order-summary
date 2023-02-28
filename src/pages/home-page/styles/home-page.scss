@@ -13,32 +13,42 @@
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    // justify-content: ;
     align-items: center;
-    border: 1px solid black;
 
-    padding: 0 16px;
+    padding: 0 16px 24px 16px;
     &__image-container {
-      .card__image {
-        width: 343px;
-        border-radius: 16px 16px 0 0;
-      }
+      background-image: url("/public/images/image.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 15%;
+      background-attachment: fixed;
+      // background-color: purple;
+      background-size: 130%;
+      width: 344px;
+      height: 188px;
+      border-radius: 16px 16px 0 0;
+      background-origin: content-box;
+      // .card__image {
+      //   width: 343px;
+      //   border-radius: 16px 16px 0 0;
+      // }
     }
 
     &__title {
       font-size: 1.5rem;
       line-height: 33px;
       color: #151827;
+      margin-top: 40px;
     }
 
     &__description {
       text-align: center;
       font-size: 0.875rem;
-      font-weight: 400;
+      font-weight: 500;
       font-style: normal;
       line-height: 22.4px;
       letter-spacing: -0.01em;
       color: #85859b;
+      margin-top: 16px;
     }
 
     &__details {
@@ -49,6 +59,8 @@
       background-color: #f8f9fe;
       border-radius: 16px;
       width: 100%;
+
+      margin-top: 32px;
 
       .details__icon {
         // flex: 1;
@@ -68,6 +80,7 @@
         .details__title {
           font-size: 1rem;
           line-height: 22px;
+          font-weight: 700;
         }
 
         .details__price {
@@ -80,7 +93,44 @@
 
       .details__link {
         margin-left: auto;
+        color: #680262;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 22px;
       }
+    }
+
+    &__confirm-button {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 26px;
+      width: 100%;
+      letter-spacing: -0.01em;
+
+      padding: 15px 79px;
+      background-color: #680262;
+
+      color: #fff;
+      border: none;
+
+      border-radius: 16px;
+      transition: background-color 0.3s;
+      margin-top: 32px;
+
+      &:hover {
+        background-color: #490245;
+      }
+    }
+
+    &__cancel-link {
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 22px;
+
+      margin-top: 20px;
+      color: #000;
+
+      letter-spacing: -0.01em;
     }
   }
 }
