@@ -3,6 +3,8 @@
 
 import "../styles/home-page.scss";
 
-// import { setupCounter } from '../../../global-scripts/scripts/counter/counter.js'
+const confirmLink = document.querySelector(".card__link-confirm");
 
-// setupCounter(document.querySelector('#counter'))
+confirmLink.addEventListener("click", function () {
+  this.innerHTML = `<i class="fa fa-circle-o-notch fa-spin fa-lg" />`;
+});
